@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import RotatingIdeaIcon from "./components/RotatingIdeaIcon"
 import Link from "next/link"
+import Image from "next/image";
 
 export default function Home() {
   const [loading, setLoading] = useState(true)
@@ -38,7 +39,13 @@ export default function Home() {
           className="container mx-auto px-4 py-16"
         >
           <nav className="flex justify-between items-center mb-16">
-            <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
+          <Image 
+      src="/idealabimagelogo.jpeg" 
+      alt="Idealab Logo" 
+      width={100} 
+      height={100} 
+    />
+            <h1  className="text-3xl pl-10 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400 ">
               Idealab MEC
             </h1>
             <div className="space-x-4">
